@@ -80,7 +80,7 @@ $(BLD_D)%.$(BIN_EXTENSION): $(SRC_D)%.c
 	@echo ""
 
 $(HTML_D)%.html: $(SRC_D)%.c
-	$(EMSC_CC_COMMAND) -o $@ $^ $(EMSC_STATIC_LIBS_D)
+	$(EMSC_CC_COMMAND) -o $@ $^ $(EMSC_STATIC_LIBS_D) 
 
 print_information:
 	@echo "Dettected OS: $(DETTECTED_OS)"
